@@ -31,10 +31,10 @@ const Home = () => {
                 <Center>
                     <h1><b>LOGIN</b></h1>
                 </Center>
-                
+                <Fieldset>
                     <Input placeholder="email" value={email} onChange={(event) => setEmail(event.target.value)} />
                     <Input placeholder="password" />
-                
+                </Fieldset>
                 <Center>
                     <DButton
                         onClick={() => validateUser(email)}

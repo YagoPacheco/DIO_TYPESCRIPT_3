@@ -5,7 +5,7 @@ import '../styles/Main.css'
 
 export const Layout = ({ children }: any) => {
   return (
-    <Box minHeight='100vh' backgroundColor='#9413dc' >
+    <Box minHeight='100vh'>
       <Header />
       <main>
         {children}
