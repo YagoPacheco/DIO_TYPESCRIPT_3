@@ -3,6 +3,6 @@ main {
     min-height: 85vh;
 }
 
-main.input{
+main input{
     border: 1px solid black;
 }
