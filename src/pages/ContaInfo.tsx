@@ -1,4 +1,4 @@
-import { Center, Spinner, Text } from "@chakra-ui/react"
+import { Box, Center, Spinner, Text } from "@chakra-ui/react"
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import { api } from "../api"
@@ -44,8 +44,19 @@ const ContaInfo = () => {
                         ) :
                         (
                             <>
-                                <Text>Informações da conta</Text>
-                                
+                                <Box
+                                    backgroundColor="white"
+                                    minHeight="120px"
+                                    padding={8}
+                                    borderRadius="25px"
+                                >
+                                    <Text fontSize='2xl' fontWeight='bold'>
+                                        Informações da conta
+                                    </Text>
+                                    <Text >{`Nome: ${userData.name}`}</Text>
+                                    <Text >{`Email: ${userData.email}`}</Text>
+                                </Box>
+
                             </>
                         )
                 }
