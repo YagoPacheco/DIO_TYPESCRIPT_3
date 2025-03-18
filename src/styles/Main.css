@@ -2,7 +2,3 @@ main {
     background: linear-gradient(90deg, #430c65 34%, #00d4ff);
     min-height: 85vh;
 }
-
-main input{
-    border: 1px solid black;
-}

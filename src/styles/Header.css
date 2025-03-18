@@ -1,4 +1,23 @@
-header{
+header {
     background: linear-gradient(90deg, #430c65 34%, #00d4ff);
     height: 10vh;
+}
+
+.banner_img {
+    height: 10vh;
+    object-fit: contain;
+    padding: 20px
+}
+
+.banner_img,
+.banner_text {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.banner_text {
+    color: #fff;
+    font-family: Cascadia Mono;
+    font-size: 35px;
+    text-shadow: 2px 2px 2px #000
 }

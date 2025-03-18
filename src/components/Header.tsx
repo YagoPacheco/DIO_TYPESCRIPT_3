@@ -18,8 +18,9 @@ export const Header = () => {
   return (
     <header>
       <Flex padding='5px'>
-        <Box>
+        <Box className='banner'>
           <Center>
+            <img src='https://ac-landing-pages-user-uploads-production.s3.amazonaws.com/0000051657/74fb05a0-78a9-423e-ac00-55c228f48c89.png'></img>
             <Text fontSize='3xl'>Dio Bank</Text>
           </Center>
         </Box>

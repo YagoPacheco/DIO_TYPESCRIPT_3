@@ -6,6 +6,7 @@ import { Card } from "../components/Card";
 import DButton from "../components/DButton";
 import { login } from "../services/login";
 import { changeLocalStorage } from "../services/storage";
+import '../styles/Main.css'
 
 
 const Home = () => {
@@ -39,7 +40,7 @@ const Home = () => {
                         </label>
                         <label>
                             Senha
-                            <Input placeholder="password" />
+                            <Input border={'1px solid black'} placeholder="password" />
                         </label>
                     </fieldset>
                     <Center>
