@@ -1,0 +1,14 @@
+main {
+    background: linear-gradient(90deg, #430c65 34%, #00d4ff);
+    min-height: 85vh;
+}
+
+button {
+    background: linear-gradient(260deg, #430c6580 34%, #00d4ff80);
+    border: 2px solid #000;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Cascadia Mono';
+    margin: 15px;
+    padding: 15px;
+}
