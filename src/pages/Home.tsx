@@ -26,22 +26,30 @@ const Home = () => {
     }
 
     return (
-        <Box padding="25px">
-            <Card>
-                <Center>
-                    <h1><b>LOGIN</b></h1>
-                </Center>
-                <Fieldset>
-                    <Input placeholder="email" value={email} onChange={(event) => setEmail(event.target.value)} />
-                    <Input placeholder="password" />
-                </Fieldset>
-                <Center>
-                    <DButton
-                        onClick={() => validateUser(email)}
-                    />
-                </Center>
-            </Card>
-        </Box>
+        <Center>
+            <Box display={'flex'} padding="25px">
+                <Card>
+                    <Center>
+                        <h1><b>LOGIN</b></h1>
+                    </Center>
+                    <fieldset>
+                        <label>
+                            Email
+                            <Input border={'1px solid black'} placeholder="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+                        </label>
+                        <label>
+                            Senha
+                            <Input placeholder="password" />
+                        </label>
+                    </fieldset>
+                    <Center>
+                        <DButton
+                            onClick={() => validateUser(email)}
+                        />
+                    </Center>
+                </Card>
+            </Box>
+        </Center>
     );
 }
 
