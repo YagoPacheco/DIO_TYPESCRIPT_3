@@ -37,11 +37,11 @@ const Home = () => {
                     <fieldset>
                         <label>
                             Email
-                            <Input border={'1px solid black'} type="email" placeholder="email" value={email} onChange={(event) => setEmail(event.target.value)} />
+                            <Input border={'1px solid black'} type="email" placeholder="Email" value={email} onChange={(event) => setEmail(event.target.value)} />
                         </label>
                         <label>
                             Senha
-                            <Input border={'1px solid black'} type="password" placeholder="password" value={password} onChange={(event) => setPassword(event.target.value)} />
+                            <Input border={'1px solid black'} type="password" placeholder="Password" value={password} onChange={(event) => setPassword(event.target.value)} />
                         </label>
                     </fieldset>
                     <Center>

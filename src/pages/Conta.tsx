@@ -1,4 +1,4 @@
-import { Center, SimpleGrid, Spinner, Text } from "@chakra-ui/react"
+import { Box, Center, SimpleGrid, Spinner, Text } from "@chakra-ui/react"
 import { useParams, useNavigate, Link } from "react-router-dom"
 import { useContext, useEffect, useState } from "react"
 import { api } from "../api"
@@ -59,8 +59,19 @@ const Conta = () => {
                             ) :
                             (
                                 <>
-                                    <CardInfo mainContent={`Bem vindo ${userData?.name}`} content={`${actualData.getDate()} / ${actualData.getMonth() + 1} / ${actualData.getFullYear()} ${actualData.getHours()}:${actualData.getMinutes()}`} />
-                                    <CardInfo mainContent='Saldo' content={`R$ ${userData.balance.toFixed(2)}`} />
+                                    <Box
+                                                backgroundColor="white"
+                                                minHeight="120px"
+                                                padding={8}
+                                                borderRadius="25px"
+                                            >
+                                                <Text fontSize='2xl' fontWeight='bold'>
+                                                    
+                                                </Text>
+                                                <Text fontSize='xl'>
+                                                    
+                                                </Text>
+                                            </Box>
                                 </>
                             )
                     }
