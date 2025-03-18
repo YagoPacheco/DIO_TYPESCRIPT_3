@@ -1,20 +1,23 @@
-import { Text } from "@chakra-ui/react"
+import { Center, Text } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 
-const ContaInfo = () => { 
+const ContaInfo = () => {
     return (
         <>
-            <Text fontSize='3xl' fontWeight='bold'>
-                Informações da conta
-            </Text>
+            <Center>
+                <button>
+                    <Link to='/conta/1'>
+                        <Text>
+                            Voltar
+                        </Text>
+                    </Link>
+                </button>
+            </Center>
             <Link to='/conta/1'>
                 <Text fontSize='xl'>
                     Conta
                 </Text>
             </Link>
-            <a href='/conta/1'>
-                Link com tag a
-            </a>
         </>
     )
 }

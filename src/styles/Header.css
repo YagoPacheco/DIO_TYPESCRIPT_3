@@ -3,21 +3,33 @@ header {
     height: 10vh;
 }
 
-.banner_img {
+.banner img {
     height: 10vh;
     object-fit: contain;
     padding: 20px
 }
 
-.banner_img,
-.banner_text {
+.banner img,
+.banner text {
     display: inline-block;
     vertical-align: middle
 }
 
-.banner_text {
+.banner text {
     color: #fff;
     font-family: Cascadia Mono;
     font-size: 35px;
     text-shadow: 2px 2px 2px #000
+}
+
+header button {
+    background: linear-gradient(260deg, hsla(277, 79%, 22%, 1), hsla(190, 100%, 50%, 0.502));
+    border: 2px solid #000;
+    border-radius: 25px;
+    color: #fff;
+    font-family: 'Cascadia Mono';
+    padding: 0px 5px 0px 5px;
+    width: 80px;
+    max-height: 5vh;
+    
 }

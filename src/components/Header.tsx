@@ -1,4 +1,4 @@
-import { Box, Button, Center, Flex, Spacer, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Spacer } from '@chakra-ui/react'
 import { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { changeLocalStorage } from '../services/storage'
@@ -20,19 +20,19 @@ export const Header = () => {
       <Flex padding='5px'>
         <Box className='banner'>
           <Center>
-            <img src='https://ac-landing-pages-user-uploads-production.s3.amazonaws.com/0000051657/74fb05a0-78a9-423e-ac00-55c228f48c89.png'></img>
-            <Text fontSize='3xl'>Dio Bank</Text>
+            <img alt='Digital Innovation One logo' src='https://ac-landing-pages-user-uploads-production.s3.amazonaws.com/0000051657/74fb05a0-78a9-423e-ac00-55c228f48c89.png'></img>
+            <text>Dio Bank</text>
           </Center>
         </Box>
         {
           isLoggedIn && (
             <>
               <Spacer />
-              <Button
+              <button
                 onClick={() => logout()}
               >
                 Sair
-              </Button>
+              </button>
             </>
           )
         }
