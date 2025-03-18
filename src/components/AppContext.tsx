@@ -18,7 +18,7 @@ export const AppContextProvider = ({ children }: any) => {
       const { login } = JSON.parse(storage)
       setIsLoggedIn(login);
     }
-  }, [storage]));
+  }, [storage]);
 
   return (
     <AppContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
